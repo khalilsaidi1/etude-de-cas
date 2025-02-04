@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Travel Offer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        input[type="text"], input[type="date"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>BACK OFFICE</h1>
+        <h2>Add a Travel Offer</h2>
+    </header>
+
+    <!-- Form to Add Travel Offer -->
+    <div class="form-section">
+        <form action="#">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" minlength="3" required />
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" minlength="3" required />
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date" required />
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date" required />
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" min="1" required />
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Adventure">Adventure</option>
+                <option value="Family">Family</option>
+                <option value="Couples">Couples</option>
+            </select>
+
+            <label for="availability">Availability:</label>
+            <input type="checkbox" id="availability" name="availability" checked /> Available
+
+            <button type="submit">Add Offer</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Your Website 2024</p>
+    </footer>
+</div>
+
+</body>
+</html>
