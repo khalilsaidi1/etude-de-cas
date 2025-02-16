@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+
+ </head>
+
+ <body >
+
+  <h1 >Home Page</h1>
+
+  <ul id="uList">
+
+   <a><li class="item" id="i1">Dashboard</li></a>
+
+   <li class="item">contact</li>
+
+   <li class="item">services</li>
+
+  </ul>
+
+  <p id="parag"></p>
+
+  
+
+ </body>
+
+ <script>
+    const headings = document.getElementsByTagName('h1');
+    if (headings.length > 0) {
+      headings[0].style.color = 'red'; 
+    }
+
+    const dashboardLink = document.getElementById('i1');
+    dashboardLink.parentElement.href = "#"; 
+
+    const newItem = document.createElement('li');
+    newItem.className = 'item';
+    newItem.textContent = 'Home';
+    document.getElementById('uList').appendChild(newItem);
+
+    const para = document.getElementById('parag');
+    para.textContent = "2A38";
+  </script>
+
+
+</html>
